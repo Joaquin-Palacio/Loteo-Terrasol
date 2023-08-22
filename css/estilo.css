@@ -9,21 +9,74 @@ main {
   padding: 10px;
 }
 
+h1 {
+  color: #ecbd5e;
+  text-decoration: underline;
+  font-style: italic;
+}
 /*? ---------------------------------------------------------------------------------------------------------*/
 
 /*! Estilos HEADER */
+header {
+  background-color: #224535;
+}
 .container-ul {
   display: flex;
+}
+
+.navbar-toggler-icon, .navbar-toggler {
+  background-color: white;
+  color: #ecbd5e;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.2rem;
+}
+.nav-link:hover {
+  transition: 0.5s;
+  color: #ecbd5e;
 }
 
 .logo {
   width: 140px;
   height: auto;
+  background-color: #fff;
 }
 
 /*? ---------------------------------------------------------------------------------------------------------*/
 
 /*! Estilos FOOTER */
 
+
+/*? ---------------------------------------------------------------------------------------------------------*/
+
+/*! Estilos CONTACTO  */
+.section-contacto {
+  background-color: #224535;
+}
+
+.formulario {
+  color: #ecbd5e;
+  width: 800px;
+}
+
+.formulario label{
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.formulario button {
+  background-color: #ecbd5e;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.formulario button:hover {
+  background-color: #ecbd5e;
+  color: #fff;
+  transition: 0.5s;
+  transform: scale(1.1);
+}
 
 /*? ---------------------------------------------------------------------------------------------------------*/

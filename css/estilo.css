@@ -54,6 +54,7 @@ header {
 /*! Estilos CONTACTO  */
 .section-contacto {
   background-color: #224535;
+  padding: 20px;
 }
 
 .formulario {

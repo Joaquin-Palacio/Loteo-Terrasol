@@ -14,17 +14,20 @@ h1 {
   text-decoration: underline;
   font-style: italic;
 }
+
 /*? ---------------------------------------------------------------------------------------------------------*/
 
 /*! Estilos HEADER */
 header {
   background-color: #224535;
 }
+
 .container-ul {
   display: flex;
 }
 
-.navbar-toggler-icon, .navbar-toggler {
+.navbar-toggler-icon,
+.navbar-toggler {
   background-color: white;
   color: #ecbd5e;
 }
@@ -33,6 +36,7 @@ header {
   color: white;
   font-size: 1.2rem;
 }
+
 .nav-link:hover {
   transition: 0.5s;
   color: #ecbd5e;
@@ -47,7 +51,39 @@ header {
 /*? ---------------------------------------------------------------------------------------------------------*/
 
 /*! Estilos FOOTER */
+.footer {
+  background-color: #224535;
+  color: #ecbd5e;
+  padding: 10px;
+}
 
+.footer p {
+  font-size: 18px;
+  margin: 0;
+}
+
+.footer .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer .social-icons li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer .social-icons a {
+  color: #ecbd5e;
+  font-size: 28px;
+  margin: 5px 20px;
+}
+
+.footer .social-icons a:hover {
+  color: #000;
+  transition: 0.5s;
+}
 
 /*? ---------------------------------------------------------------------------------------------------------*/
 
@@ -62,7 +98,7 @@ header {
   width: 800px;
 }
 
-.formulario label{
+.formulario label {
   font-weight: bolder;
   font-size: 18px;
 }

@@ -1,3 +1,4 @@
+/* Funcion para formulario */
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contactForm');
   const responseDiv = document.getElementById('response');

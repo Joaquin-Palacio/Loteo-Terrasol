@@ -119,7 +119,7 @@ header {
 /*? ---------------------------------------------------------------------------------------------------------*/
 /*! Estilos Servicios */
 
-.section-servicios, 
+.section-servicios,
 .section-amenities {
   background-color: #224535;
   color: #ecbd5e;
@@ -128,15 +128,15 @@ header {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    height: 100%;
-    background-color: #ecbd5e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  height: 100%;
+  background-color: #ecbd5e;
 }
 
 .card:hover {
@@ -167,11 +167,10 @@ header {
 }
 
 .section-novedades {
-  background-color: #ecbd5e;
+  background-color: #224535;
   text-align: center;
-  color: #224535;
+  color: #ecbd5e;
   padding: 20px;
-  border: 3px solid #224535;
 }
 
 .section-novedades h2 {
@@ -197,19 +196,34 @@ header {
   height: 100%;
 }
 
+.card-info:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
 .card-info p {
   font-weight: bold;
   font-size: 18px;
 }
 
-.container-ubi-img {
- display: flex;
- justify-content: space-around;
+.section-ubicacion {
+  color: #224535;
 }
+
+.container-ubi-img {
+  display: flex;
+  justify-content: space-around;
+}
+
+.img-style:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
 
 .container-ubi-img img {
   margin-right: 10px;
-  width: 400px;
+  height: 300px;
   border: 5px solid #ecbd5e;
 }
 

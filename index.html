@@ -23,6 +23,7 @@
 
 <body>
 
+  <!-- INICIO HEADER -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
@@ -67,10 +68,13 @@
       </div>
     </nav>
   </header>
+  <!-- FIN HEADER -->
 
+  <!-- INICIO MAIN -->
   <main>
     <h1 class="text-center">Terrasol - Barrio Abierto</h1>
 
+    <!-- INICIO SECTION INTRODUCCION -->
     <section class="section-intro mt-3 p-2">
       <p class="text-center">Su entrada Principal se encuentra sobre Calle Cordoba a la altura aproximada de 1900 ( Hoy
         B° Eduardo Angeloz).
@@ -79,6 +83,7 @@
       </p>
     </section>
 
+    <!-- INICIO SECTION NOVEDADES -->
     <section class="section-novedades mt-3 rounded">
       <h2>Novedades</h2>
 
@@ -108,25 +113,27 @@
       </div>
     </section>
 
+    <!-- INICIO SECTION INFORMACION -->
     <section class="section-info mt-5">
-      <div class="container mt-4">
+
+      <div class="container">
         <div class="row">
 
-          <div class="col-md-4">
+          <div class="col-lg-4 mb-4">
             <div class="card-info shadow">
               <h3>Lotes</h3>
               <p>Lotes desde 500 m2 a 800 m2</p>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-lg-4 mb-4">
             <div class="card-info shadow">
               <h3>Proyecto</h3>
               <p>Está dividido en 3 etapas de comercialización</p>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-lg-4 mb-4">
             <div class="card-info shadow">
               <h3>Pago</h3>
               <p>Pagando de contado, 10% de descuento</p>
@@ -137,18 +144,61 @@
       </div>
     </section>
 
+    <!-- INICIO SECTION UBICACION -->
     <section class="section-ubicacion mt-5 rounded">
-      <h4 class="text-center">Ubicación</h4>
+      <h3 class="text-center">Ubicación</h3>
 
-      <div class="container-ubi-img">
-        <img src="./assets/primeraEtapa.jpg" alt="Plano primera etapa" class="img-fluid rounded">
-        <img src="./assets/loteoAereo.jpg" alt="Imagen Aerea" class="img-fluid rounded">
-        <img src="./assets/lotesMarcados.jpg" alt="Lotes Marcados ficticios" class="img-fluid rounded">
+      <div class="row m-5 container-ubi-img">
+        <div class="col-lg-4 mb-4">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+            <img class="w-100 mb-4 img-fluid rounded img-style" src="./assets/primeraEtapa.jpg" alt="Plano primera etapa">
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+            <img class="w-100 mb-4 img-fluid rounded img-style" src="./assets/loteoAereo.jpg" alt="Imagen Aerea">
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+            <img class="w-100 mb-4 img-fluid rounded img-style" src="./assets/lotesMarcados.jpg" alt="Lotes Marcados ficticios">
+          </a>
+        </div>
       </div>
+
+      <!-- Modal 1 -->
+      <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="./assets/primeraEtapa.jpg" alt="Plano primera etapa">
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage2">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="./assets/loteoAereo.jpg" alt="toma aerea del loteo">
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage3">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <img src="./assets/lotesMarcados.jpg" alt="Lotes marcados">
+          </div>
+        </div>
+      </div>
+
     </section>
 
   </main>
+  <!-- FIN MAIN -->
 
+  <!-- INICIO FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -177,12 +227,14 @@
       </div>
     </div>
   </footer>
+  <!-- FIN FOOTER -->
 
+  <!-- SCRIPTS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
 
-    <script src="./index.js"></script>
+  <script src="./index.js"></script>
 
 </body>
 

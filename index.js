@@ -42,3 +42,16 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+
+
+/* Animacion */
+const animatedHeading = document.querySelector('.animate__heartBeat');
+
+function restartAnimation() {
+  animatedHeading.classList.remove('animate__heartBeat');
+  void animatedHeading.offsetWidth; // Reiniciar animación
+  animatedHeading.classList.add('animate__heartBeat');
+}
+
+// Reiniciar la animación cada 5 segundos (5000 ms)
+setInterval(restartAnimation, 2000);

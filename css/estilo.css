@@ -1,4 +1,4 @@
-/*! Reset Estilos */
+/*! Reset Estilos y algunos generales */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ main {
 }
 
 h1 {
-  color: #ecbd5e;
+  color: #224535;
   text-decoration: underline;
   font-style: italic;
 }
@@ -122,7 +122,7 @@ header {
 .section-servicios, 
 .section-amenities {
   background-color: #224535;
-  color: #fff;
+  color: #ecbd5e;
   padding: 20px;
   margin-top: 30px;
 }
@@ -156,5 +156,63 @@ header {
 .card-title {
   font-weight: bold;
 }
+
+/*? ---------------------------------------------------------------------------------------------------------*/
+
+/*! Estilos Index */
+.section-intro p {
+  font-weight: bolder;
+  font-size: 18px;
+  color: #224535;
+}
+
+.section-novedades {
+  background-color: #ecbd5e;
+  text-align: center;
+  color: #224535;
+  padding: 20px;
+  border: 3px solid #224535;
+}
+
+.section-novedades h2 {
+  text-decoration: underline;
+}
+
+.section-novedades p {
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.section-info {
+  text-align: center;
+}
+
+.card-info {
+  border: 5px solid #ecbd5e;
+  padding: 10px;
+  border-radius: 8px;
+  color: #224535;
+  font-style: italic;
+  height: 100%;
+}
+
+.card-info p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.container-ubi-img {
+ display: flex;
+ justify-content: space-around;
+}
+
+.container-ubi-img img {
+  margin-right: 10px;
+  width: 400px;
+  border: 5px solid #ecbd5e;
+}
+
+
 
 /*? ---------------------------------------------------------------------------------------------------------*/

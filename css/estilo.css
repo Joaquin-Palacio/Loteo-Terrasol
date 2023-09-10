@@ -29,7 +29,7 @@ header {
 .navbar-toggler-icon,
 .navbar-toggler {
   background-color: white;
-  color: #f17713;
+  color: white;
 }
 
 .nav-link {
@@ -43,7 +43,7 @@ header {
 }
 
 .logo {
-  width: 140px;
+  width: 80px;
   height: auto;
   background-color: #fff;
 }
@@ -121,7 +121,7 @@ header {
 
 .section-servicios,
 .section-amenities {
-  background-color: #224535;
+  border: 3px solid #224535;
   color: #f17713;
   padding: 20px;
   margin-top: 30px;
@@ -136,7 +136,14 @@ header {
   padding: 15px;
   margin-bottom: 20px;
   height: 100%;
+  border: 3px solid #f17713;
+  color: #224535;
+}
+
+.card img {
   background-color: #f17713;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .card:hover {
@@ -145,7 +152,7 @@ header {
 }
 
 .card img {
-  width: 80px;
+  width: 60px;
 }
 
 .card:hover img {
@@ -167,10 +174,11 @@ header {
 }
 
 .section-novedades {
-  background-color: #224535;
+  background-color: #fff;
   text-align: center;
   color: #f17713;
   padding: 20px;
+  border: 3px solid #224535;
 }
 
 .section-novedades h2 {
@@ -232,7 +240,7 @@ header {
 /*? ---------------------------------------------------------------------------------------------------------*/
 /*! Estilos Quienes Somos */
 .section-sobreNos {
-  background-color: #f17713;
+  border: 3px solid #f17713;
   color: #224535;
   font-weight: 500;
 }

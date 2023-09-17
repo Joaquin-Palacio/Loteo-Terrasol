@@ -244,8 +244,12 @@ b {
 
 .card-sobreNos {
   padding: 2rem;
+  border: 3px solid transparent;
 }
 
-
+.card-sobreNos:hover {
+  transition: 0.8s;
+  border-color: #044c45;
+}
 
 /*! ========== Estilos CONTACTO ========== */

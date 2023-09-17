@@ -1,64 +1,71 @@
-/*! Reset Estilos y algunos generales */
+/*! Reset Estilos y fuente */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 main {
-  margin: 20px;
-  padding: 10px;
+  margin-top: 8rem;
 }
 
 h1 {
-  color: #224535;
-  text-decoration: underline;
-  font-style: italic;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: #044c45;
 }
 
-/*? ---------------------------------------------------------------------------------------------------------*/
+b {
+  color: #f99900;
+}
 
-/*! Estilos HEADER */
-header {
-  background-color: #224535;
+/*! ========== Estilos HEADER ========== */
+.header {
+  background-color: #044c45;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+.header button {
+  color: #fff;
+  background-color: #fff;
+}
+
+.logo {
+  max-width: 5rem;
+  background-color: #fff;
 }
 
 .container-ul {
   display: flex;
 }
 
-.navbar-toggler-icon,
-.navbar-toggler {
-  background-color: white;
-  color: white;
+.container-ul li {
+  margin-right: 1rem;
 }
 
-.nav-link {
-  color: white;
-  font-size: 1.2rem;
+.container-ul li a {
+  color: #fff ;
+  font-size: 1.05rem;
 }
 
-.nav-link:hover {
-  transition: 0.5s;
-  color: #f17713;
+.container-ul li a:hover {
+  color: #f99900;
 }
 
-.logo {
-  width: 80px;
-  height: auto;
-  background-color: #fff;
-}
-
-/*? ---------------------------------------------------------------------------------------------------------*/
-
-/*! Estilos FOOTER */
+/*! ========== Estilos FOOTER ========== */
 .footer {
-  background-color: #224535;
-  color: #f17713;
-  padding: 10px;
+  background-color: #044c45;
+  color: #fff;
+  padding: .7rem;
 }
 
 .footer p {
-  font-size: 18px;
+  font-size: 1.05rem;
   margin: 0;
 }
 
@@ -71,124 +78,31 @@ header {
 
 .footer .social-icons li {
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 .2rem;
 }
 
 .footer .social-icons a {
-  color: #f17713;
-  font-size: 28px;
-  margin: 5px 20px;
+  color: #fff;
+  font-size: 1.6rem;
+  margin: .2rem 1rem;
 }
 
 .footer .social-icons a:hover {
-  color: #000;
   transition: 0.5s;
+  color: #f99900;
 }
 
-/*? ---------------------------------------------------------------------------------------------------------*/
-
-/*! Estilos CONTACTO  */
-.section-contacto {
-  background-color: #224535;
-  padding: 20px;
+/*! ========== Estilos HOME ========== */
+.section-intro h3 {
+  font-weight: 600;
+  color: #044c45;
 }
 
-.formulario {
-  color: #f17713;
-  width: 800px;
-}
-
-.formulario label {
-  font-weight: bolder;
-  font-size: 18px;
-}
-
-.formulario button {
-  background-color: #f17713;
-  font-weight: 500;
-  font-size: 18px;
-}
-
-.formulario button:hover {
-  background-color: #f17713;
-  color: #fff;
-  transition: 0.5s;
-  transform: scale(1.1);
-}
-
-/*? ---------------------------------------------------------------------------------------------------------*/
-/*! Estilos Servicios */
-
-.section-servicios,
-.section-amenities {
-  border: 3px solid #224535;
-  color: #f17713;
-  padding: 20px;
-  margin-top: 30px;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 20px;
-  height: 100%;
-  border: 3px solid #f17713;
-  color: #224535;
-}
-
-.card img {
-  background-color: #f17713;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  transition: 0.8s ease;
-}
-
-.card img {
-  width: 60px;
-}
-
-.card:hover img {
-  transform: scale(1.3);
-  transition: 0.8s ease;
-}
-
-.card-title {
-  font-weight: bold;
-}
-
-/*? ---------------------------------------------------------------------------------------------------------*/
-
-/*! Estilos Index */
 .section-intro p {
-  font-weight: bolder;
-  font-size: 18px;
-  color: #224535;
-}
-
-.section-novedades {
-  background-color: #fff;
-  text-align: center;
-  color: #f17713;
-  padding: 20px;
-  border: 3px solid #224535;
-}
-
-.section-novedades h2 {
-  text-decoration: underline;
-}
-
-.section-novedades p {
-  font-size: 20px;
-  font-weight: bolder;
-  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #044c45;
+  font-weight: 600;
+  padding: 0 2rem;
 }
 
 .section-info {
@@ -196,86 +110,101 @@ header {
 }
 
 .card-info {
-  border: 5px solid #f17713;
-  padding: 10px;
-  border-radius: 8px;
-  color: #224535;
-  font-style: italic;
+  border: 1px solid #f99900;
+  padding: 1rem;
+  border-radius: .5rem;
+  color: #044c45;
   height: 100%;
 }
 
-.card-info:hover {
-  transition: 0.5s;
-  transform: scale(1.05);
+.card-info h3 {
+  font-weight: 800;
 }
 
 .card-info p {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.section-ubicacion {
-  color: #224535;
-}
-
-.container-ubi-img {
-  display: flex;
-  justify-content: space-around;
-}
-
-.img-style:hover {
-  transition: 0.5s;
-  transform: scale(1.05);
-}
-
-
-.container-ubi-img img {
-  margin-right: 10px;
-  height: 300px;
-  border: 5px solid #f17713;
-}
-
-
-
-/*? ---------------------------------------------------------------------------------------------------------*/
-/*! Estilos Quienes Somos */
-.section-sobreNos {
-  border: 3px solid #f17713;
-  color: #224535;
+  font-size: 1.15rem;
   font-weight: 500;
 }
 
-.section-sobreNos h2 {
-  font-style: italic;
+.card-info:hover {
+  transition: 0.8s;
+  transform: scale(1.05);
+  font-size: 1.15rem;
+  color: #044c45;
+}
+
+/*! ========== Estilos SERVICIOS ========== */
+.section-servicios h2 {
+  color: #044c45;
+  font-weight: 600;
+}
+
+.section-servicios .card {
+  border: 1px solid #044c45;
+  padding: 2rem;
+  height: 100%;
+  align-items: center;
+}
+
+.section-servicios .card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #044c45;
+}
+
+.section-servicios .card img {
+  max-width: 3.50rem;
+  border: 1px solid #f99900;
+  padding: 0.5rem;
+  border-radius: 25%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.8s ease;
+}
+
+.card:hover img {
+  transform: scale(1.3);
+  transition: 0.8s ease;
+}
+
+.section-amenities h2 {
+  color: #044c45;
+  font-weight: 600;
+}
+
+.section-amenities .card {
+  border: 1px solid #044c45;
+  padding: 2rem;
+  height: 100%;
+  align-items: center;
+}
+
+.section-amenities .card h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #044c45;
+}
+
+.section-amenities .card img {
+  max-width: 3.50rem;
+  border: 1px solid #f99900;
+  padding: 0.5rem;
+  border-radius: 25%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.8s ease;
+}
+
+.card:hover img {
+  transform: scale(1.3);
+  transition: 0.8s ease;
 }
 
 
-/*? ---------------------------------------------------------------------------------------------------------*/
-/*! Estilos GALERIA */
+/*! ========== Estilos GALERIA ========== */
 
-.carousel-inner img {
-  max-height: 400px;
-  margin: 0 auto;
-  display: block;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  background-color: #f17713;
-  color: #224535;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  color: #224535;
-  border-radius: 50%;
-  padding: 12px;
-  font-size: 24px;
-}
+/*! ========== Estilos CONTACTO ========== */

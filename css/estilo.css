@@ -204,7 +204,48 @@ b {
   transition: 0.8s ease;
 }
 
-
 /*! ========== Estilos GALERIA ========== */
+.section-carrusel {
+  color: #044c45;
+}
+
+.section-carrusel h2, p {
+  font-weight: 600;
+}
+
+.section-carrusel p {
+  font-size: 1rem;
+}
+
+.carrusel {
+  margin: auto;
+  padding: 0 2rem;
+}
+
+/*! ========== Estilos QUIENES SOMOS ========== */
+.section-sobre-nosotros {
+  color: #044c45;
+}
+
+.section-sobre-nosotros h2 {
+  font-weight: 600;
+}
+
+.section-sobre-nosotros h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #f99900;
+}
+
+.section-sobre-nosotros p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card-sobreNos {
+  padding: 2rem;
+}
+
+
 
 /*! ========== Estilos CONTACTO ========== */

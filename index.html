@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Animate -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 
   <!-- Boostrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -78,10 +77,10 @@
 
   <!-- INICIO MAIN -->
   <main>
-    <h1 class="text-center mt-5" id="home">Terrasol - <b>Barrio Abierto</b></h1>
+    <h1 class="text-center padTop" id="home">Terrasol - <b>Barrio Abierto</b></h1>
 
     <!-- INICIO SECTION INTRODUCCION -->
-    <section class="section-intro mt-5 p-2">
+    <section class="container section-intro mt-5 p-2">
       <h3 class="text-center">El proyecto de urbanización más grande de Bell Ville</h3>
       <p class="text-center">Su entrada Principal se encuentra sobre Calle Cordoba a la altura aproximada de 1900 ( Hoy
         B° Eduardo Angeloz).
@@ -92,7 +91,7 @@
     </section>
 
     <!-- INICIO SECTION INFORMACION -->
-    <section class="section-info mt-5">
+    <section class="container section-info mt-5">
       <div class="container">
         <div class="row">
 
@@ -121,61 +120,9 @@
       </div>
     </section>
 
-    <!-- INICIO SECTION UBICACION -->
-    <!--   <section class="section-ubicacion mt-5 rounded">
-      <h3 class="text-center">Ubicación</h3>
-
-      <div class="row m-5 container-ubi-img">
-        <div class="col-lg-4 mb-4">
-          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
-            <img class="w-100 mb-4 img-fluid rounded img-style" src="./assets/primeraEtapa.jpg"
-              alt="Plano primera etapa">
-          </a>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
-            <img class="w-100 mb-4 img-fluid rounded img-style" src="./assets/loteoAereo.jpg" alt="Imagen Aerea">
-          </a>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
-            <img class="w-100 mb-4 img-fluid rounded img-style" src="./assets/lotesMarcados.jpg"
-              alt="Lotes Marcados ficticios">
-          </a>
-        </div>
-      </div> -->
-
-    <!-- Modal 1 -->
-    <!-- <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <img src="./assets/primeraEtapa.jpg" alt="Plano primera etapa">
-          </div>
-        </div>
-      </div> -->
-
-    <!-- Modal 2 -->
-    <!--  <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage2">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <img src="./assets/loteoAereo.jpg" alt="toma aerea del loteo">
-          </div>
-        </div>
-      </div> -->
-
-    <!-- Modal 3 -->
-    <!--   <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage3">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-          <div class="modal-content">
-            <img src="./assets/lotesMarcados.jpg" alt="Lotes marcados">
-          </div>
-        </div>
-      </div>
-
-    </section> -->
 
     <!-- INICIO SERVICIOS -->
-    <section class="section-servicios mt-5" id="servicios">
+    <section class="container section-servicios mt-5 padTop" id="servicios">
       <h2 class="text-center">Servicios</h2>
 
       <div class="container mt-4">
@@ -259,7 +206,7 @@
 
     </section>
 
-    <section class="section-amenities mt-5">
+    <section class="container section-amenities mt-5">
       <h2 class="text-center">Amenities</h2>
 
       <div class="container mt-4">
@@ -316,39 +263,55 @@
     <!-- FIN SERVICIOS -->
 
     <!-- INICIO GALERIA -->
-    <section class="section-carrusel mt-5" id="galeria">
+    <section class="container section-carrusel mt-5 padTop" id="galeria">
       <h2 class="text-center">Imágenes futuristas sobre proyectos planeados de Terrasol.</h2>
-      <p class="text-center"> <b>Galería Comercial, Estadio de Voley y Complejo de Departamentos</b>. Se encontrarían en
-        el ingreso por calle Córdoba</p>
-      <div id="carouselExample" class="carousel slide carrusel">
+      <p class="text-center">
+        <b>Galería Comercial, Estadio de Voley y Complejo de Departamentos</b>.
+        Se encontrarían en el ingreso por calle Córdoba.
+      </p>
+
+      <div id="carouselExampleIndicators" class="carousel slide container-carrusel shadow rounded">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../assets/IMG-20230829-WA0017.jpg" class="d-block w-100 rounded" alt="Imagen ilustrativa">
+            <img src="./assets/IMG-20230829-WA0002.jpg" class="d-block w-100" alt="Imagen Ilustrativa">
           </div>
           <div class="carousel-item">
-            <img src="../assets/IMG-20230829-WA0002.jpg" class="d-block w-100 rounded" alt="Imagen ilustrativa">
+            <img src="./assets/IMG-20230829-WA0005.jpg" class="d-block w-100" alt="Imagen Ilustrativa">
           </div>
           <div class="carousel-item">
-            <img src="../assets/IMG-20230829-WA0005.jpg" class="d-block w-100 rounded" alt="Imagen ilustrativa">
+            <img src="./assets/IMG-20230829-WA0014.jpg" class="d-block w-100" alt="Imagen Ilustrativa">
           </div>
           <div class="carousel-item">
-            <img src="../assets/IMG-20230829-WA0014.jpg" class="d-block w-100 rounded" alt="Imagen ilustrativa">
+            <img src="./assets/IMG-20230829-WA0017.jpg" class="d-block w-100" alt="Imagen Ilustrativa">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
     </section>
     <!-- FIN GALERIA -->
 
     <!-- INICIO QUIENES SOMOS -->
-    <section class="container mt-5 p-3 rounded text-center section-sobre-nosotros" id="quienes-somos">
+    <section class="container mt-5 p-3 rounded text-center section-sobre-nosotros padTop" id="quienes-somos">
 
       <h2>Sobre Nosotros</h2>
       <div class="container mt-4">
@@ -357,21 +320,24 @@
           <div class="col-lg-4 mb-4 text-center">
             <div class="card-sobreNos shadow rounded">
               <h3>Nuestro Equipo</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque fuga, in dolorum explicabo necessitatibus esse?</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque fuga, in dolorum explicabo
+                necessitatibus esse?</p>
             </div>
           </div>
 
           <div class="col-lg-4 mb-4 text-center">
             <div class="card-sobreNos shadow rounded">
               <h3>Experiencia y Trayectoria</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque fuga, in dolorum explicabo necessitatibus esse?</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque fuga, in dolorum explicabo
+                necessitatibus esse?</p>
             </div>
           </div>
 
           <div class="col-lg-4 mb-4 text-center">
             <div class="card-sobreNos shadow rounded">
               <h3>Nuestra Mision</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque fuga, in dolorum explicabo necessitatibus esse?</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque fuga, in dolorum explicabo
+                necessitatibus esse?</p>
             </div>
           </div>
 
@@ -381,50 +347,62 @@
     <!-- FIN QUIENES SOMOS -->
 
     <!-- INICIO CONTACTO -->
-    <section class="container section-contacto rounded mt-4">
+    <section class="container section-contacto rounded mt-5 mb-3 padTop">
       <h2 id="contacto">Contacto</h2>
-      <div class="container d-flex justify-content-center align-items-center">
-        <form class="formulario rounded" id="contactForm">
+      <p>Para poder brindarte una atención rápida y personalizada, solo necesitamos que coloques tu <b>nombre, correo
+          electrónico y celular</b>
+      </p>
 
-          <div class="field">
-            <label for="from_name">Nombre y Apellido</label>
-            <input type="text" class="form-control" id="from_name" name="from_name" required>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4 form-floating mb-4">
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre" required>
+          <label for="validationCustom01" class="form-label">Nombre</label>
+          <div class="valid-tooltip mjs-bueno">Tu nombre se ve bien!</div>
+          <div class="invalid-tooltip msj-malo">Por favor, ingresa tu nombre.</div>
+        </div>
+
+        <div class="col-md-4 form-floating mb-4">
+          <input type="email" class="form-control" id="validationCustom02" placeholder="Correo Electrónico" required>
+          <label for="validationCustom02" class="form-label">Correo Electrónico</label>
+          <div class="valid-tooltip mjs-bueno">Tu correo electrónico se ve bien!
           </div>
+          <div class="invalid-tooltip msj-malo">Por favor, ingresa una dirección de correo electrónico válida.</div>
+        </div>
 
-          <div class="field mt-3">
-            <label for="email_id">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email_id" name="email_id" required>
-            <small class="form-text text-light">Ej. terrasol@gmail.com</small>
-          </div>
+        <div class="col-md-4 form-floating mb-4">
+          <input type="number" class="form-control" id="validationCustom02" placeholder="Teléfono/Celular" min="0" required>
+          <label for="validationCustom02" class="form-label">Teléfono/Celular</label>
+          <div class="valid-tooltip mjs-bueno">Tu número de celular se ve bien!</div>
+          <div class="invalid-tooltip msj-malo">Por favor, ingresa un número de celular válido</div>
+        </div>
+        <small id="passwordHelpInline" class="form-text">
+          Ej: 54 3537 112233
+        </small>
 
-          <div class="field mt-3">
-            <label for="number">Teléfono</label>
-            <input type="tel" class="form-control" id="number" name="number" pattern="[0-9]{10}" required>
-            <small class="form-text text-light">Ej. 3537123456</small>
-          </div>
+        <div class="form-floating mb-4">
+          <textarea class="form-control" id="messageTextarea" placeholder="Mensaje" style="height:8rem"></textarea>
+          <label for="messageTextarea" class="form-label">Tu mensaje</label>
+        </div>
 
-          <div class="field mt-3">
-            <label for="message">Consulta tus dudas</label>
-            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-          </div>
-
-          <div id="response" class="mt-3"></div>
-
-          <div class="container-btn">
-            <button type="submit" id="button" class="btn m-2">Enviar</button>
-            <button type="reset" class="btn m-2">Reiniciar Formulario</button>
-          </div>
-
-        </form>
-      </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
 
     </section>
     <!-- FIN CONTACTO -->
+
+    <!-- Crea un elemento <button> con un id que lo identifique -->
+    <button id="boton-inicio" class="boton-inicio">
+      <i class="ri-arrow-up-line"></i>
+    </button>
+
+
   </main>
   <!-- FIN MAIN -->
 
   <!-- INICIO FOOTER -->
-  <footer class="footer">
+  <footer class="footer mt-2">
     <div class="container">
       <div class="row">
 
@@ -458,6 +436,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
     </script>
+
   <script src="./index.js"></script>
 
 </body>

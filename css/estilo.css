@@ -8,7 +8,7 @@
 }
 
 main {
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 h1 {
@@ -21,13 +21,10 @@ b {
   color: #f99900;
 }
 
+
 /*! ========== Estilos HEADER ========== */
 .header {
   background-color: #044c45;
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  top: 0;
 }
 
 .header button {
@@ -49,7 +46,7 @@ b {
 }
 
 .container-ul li a {
-  color: #fff ;
+  color: #fff;
   font-size: 1.05rem;
 }
 
@@ -126,13 +123,6 @@ b {
   font-weight: 500;
 }
 
-.card-info:hover {
-  transition: 0.8s;
-  transform: scale(1.05);
-  font-size: 1.15rem;
-  color: #044c45;
-}
-
 /*! ========== Estilos SERVICIOS ========== */
 .section-servicios h2 {
   color: #044c45;
@@ -156,7 +146,7 @@ b {
   max-width: 3.50rem;
   border: 1px solid #f99900;
   padding: 0.5rem;
-  border-radius: 25%;
+  border-radius: 10%;
 }
 
 .card:hover {
@@ -191,7 +181,7 @@ b {
   max-width: 3.50rem;
   border: 1px solid #f99900;
   padding: 0.5rem;
-  border-radius: 25%;
+  border-radius: 10%;
 }
 
 .card:hover {
@@ -209,7 +199,8 @@ b {
   color: #044c45;
 }
 
-.section-carrusel h2, p {
+.section-carrusel h2,
+p {
   font-weight: 600;
 }
 
@@ -217,10 +208,11 @@ b {
   font-size: 1rem;
 }
 
-.carrusel {
+.container-carrusel {
+  width: 70%;
   margin: auto;
-  padding: 0 2rem;
 }
+
 
 /*! ========== Estilos QUIENES SOMOS ========== */
 .section-sobre-nosotros {
@@ -244,12 +236,62 @@ b {
 
 .card-sobreNos {
   padding: 2rem;
-  border: 3px solid transparent;
+  border: 1px solid transparent;
 }
 
 .card-sobreNos:hover {
   transition: 0.8s;
-  border-color: #044c45;
+  transform: scale(1.1);
 }
 
 /*! ========== Estilos CONTACTO ========== */
+.section-contacto {
+  text-align: center;
+  background-color: #044c45;
+  color: white;
+  padding: 1rem;
+}
+
+.section-contacto h2 {
+  color: #f99900;
+  font-weight: 600;
+}
+
+.section-contacto label {
+  color: #044c45;
+  font-weight: 600;
+}
+
+.section-contacto small {
+  text-align: start;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+.section-contacto button {
+  border: none;
+  color: #fff;
+  background-color: #f99900;
+  font-weight: 600;
+}
+
+.section-contacto button:hover {
+  transition: 0.8s;
+  background-color: #f99900;
+  transform: scale(1.1);
+}
+
+/*? Boton Flechita =================== */
+.boton-inicio {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #f99900;
+  color: #fff;
+  font-size: 20px;
+}

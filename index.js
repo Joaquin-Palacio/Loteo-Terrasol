@@ -20,8 +20,6 @@ window.addEventListener('scroll', mostrarBoton);
 let boton = document.getElementById('boton-inicio'); // Obtiene el botón por su id
 boton.addEventListener('click', irAlInicio);
 
-
-
 /* ========== JS de BOOSTRAP ========== */
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {

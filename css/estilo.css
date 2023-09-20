@@ -123,6 +123,23 @@ b {
   font-weight: 500;
 }
 
+/*! ========== Estilos UBICACION ========== */
+.section-ubicacion h2 {
+  color: #044c45;
+  font-weight: 600;
+}
+
+.section-ubicacion p {
+  color: #044c45;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.section-ubicacion img {
+  width: 100%;
+  height: auto;
+}
+
 /*! ========== Estilos SERVICIOS ========== */
 .section-servicios h2 {
   color: #044c45;
@@ -302,5 +319,5 @@ p {
   left: 20px;
   width: 60px;
   height: 60px;
-  font-size: 50px; 
+  font-size: 50px;
 }

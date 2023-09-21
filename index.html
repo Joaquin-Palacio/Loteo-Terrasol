@@ -138,12 +138,28 @@
         ciudad.
       </p>
 
-      <div class="row">
-        <div class="col-12 col-lg-6">
-          <img src="./assets/primeraEtapa.jpg" alt="img" class="rounded img-fluid">
+      <div class="gallery mt-5">
+        <div class="row container-imgUbi">
+          <div class="col-12 col-lg-6">
+            <img src="./assets/primeraEtapa.jpg" class="gallery-item rounded" alt="gallery">
+          </div>
+          <div class="col-12 col-lg-6">
+            <img src="./assets/loteoAereo.jpg" class="gallery-item rounded" alt="gallery">
+          </div>
         </div>
-        <div class="col-12 col-lg-6">
-          <img src="./assets/loteoAereo.jpg" alt="img" class="rounded img-fluid">
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="./assets/primeraEtapa.jpg" class="modal-img" alt="modal img">
+            </div>
+          </div>
         </div>
       </div>
 

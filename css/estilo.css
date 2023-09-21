@@ -136,8 +136,21 @@ b {
 }
 
 .section-ubicacion img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
+  cursor: pointer;
+  padding: 1rem;
+  height: 500px;
+}
+
+#gallery-modal .modal-img{
+	width: 100%;
+}
+
+/* una query para un pequeño ajuste en las imagenes */
+@media screen and (max-width: 992px) {
+  .section-ubicacion img {
+    width: 100%;
+  }
 }
 
 /*! ========== Estilos SERVICIOS ========== */

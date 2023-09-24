@@ -7,6 +7,10 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Remix Icon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 
@@ -80,7 +84,7 @@
     <h1 class="text-center padTop" id="home">Terrasol - <b>Barrio Abierto</b></h1>
 
     <!-- INICIO SECTION INTRODUCCION -->
-    <section class="container section-intro p-2">
+    <section class="container section-intro p-2" data-aos="fade-up" data-aos-duration="3000">
       <p class="text-center">Nace un nuevo lugar para vivir mejor en Bell Ville,
         un barrio para encontrarte con la naturaleza a
         metros de la ciudad.
@@ -94,7 +98,7 @@
     </section>
 
     <!-- INICIO SECTION INFORMACION -->
-    <section class="container section-info mt-5">
+    <section class="container section-info mt-5" data-aos="fade-up" data-aos-duration="3000">
       <div class="container">
         <div class="row">
 
@@ -126,7 +130,7 @@
     </section>
 
     <!-- INICIO SERVICIOS -->
-    <section class="container section-servicios mt-5 padTop" id="servicios">
+    <section class="container section-servicios mt-5 padTop" id="servicios" data-aos="fade-up" data-aos-duration="3000">
       <h2 class="text-center">Servicios</h2>
 
       <div class="container mt-4">
@@ -210,7 +214,7 @@
 
     </section>
 
-    <section class="container section-amenities mt-5">
+    <section class="container section-amenities mt-5" data-aos="fade-up" data-aos-duration="3000">
       <h2 class="text-center">Amenities</h2>
 
       <div class="container mt-4">
@@ -267,7 +271,7 @@
     <!-- FIN SERVICIOS -->
 
     <!-- INICIO UBICACION -->
-    <section class="container section-ubicacion mt-5">
+    <section class="container section-ubicacion mt-5" data-aos="fade-up" data-aos-duration="3000">
       <h2 class="text-center">Ubicación</h2>
       <p class="text-center">
         Un barrio <b>diseñado y pensado para
@@ -307,7 +311,7 @@
     <!-- FIN UBICACION -->
 
     <!-- INICIO GALERIA -->
-    <section class="container section-carrusel mt-5 padTop" id="galeria">
+    <section class="container section-carrusel mt-5 padTop" id="galeria" data-aos="fade-up" data-aos-duration="3000">
       <h2 class="text-center">Imágenes Ilustrativas sobre futuros proyectos en Terrasol.</h2>
       <p class="text-center">
         <b>Galería Comercial, Estadio de Voley y Complejo de Departamentos</b>.
@@ -355,7 +359,8 @@
     <!-- FIN GALERIA -->
 
     <!-- INICIO QUIENES SOMOS -->
-    <section class="container mt-5 p-3 rounded text-center section-sobre-nosotros padTop" id="quienes-somos">
+    <section class="container mt-5 p-3 rounded text-center section-sobre-nosotros padTop" id="quienes-somos"
+      data-aos="fade-up" data-aos-duration="3000">
 
       <h2>Sobre Nosotros</h2>
       <div class="container mt-4">
@@ -403,7 +408,7 @@
     <!-- FIN QUIENES SOMOS -->
 
     <!-- INICIO CONTACTO -->
-    <section class="container section-contacto rounded mt-5 mb-3 padTop">
+    <section class="container section-contacto rounded mt-5 mb-3 padTop" data-aos="fade-up" data-aos-duration="3000">
       <h2 id="contacto">Contacto</h2>
       <p>Para poder brindarte una atención rápida y personalizada, solo necesitamos que coloques tu <b>nombre, correo
           electrónico y celular</b>
@@ -500,6 +505,11 @@
     </script>
 
   <script src="./index.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

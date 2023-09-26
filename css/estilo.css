@@ -123,36 +123,6 @@ b {
   font-weight: 500;
 }
 
-/*! ========== Estilos UBICACION ========== */
-.section-ubicacion h2 {
-  color: #044c45;
-  font-weight: 600;
-}
-
-.section-ubicacion p {
-  color: #044c45;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.section-ubicacion img {
-  max-width: 100%;
-  cursor: pointer;
-  padding: 1rem;
-  height: 500px;
-}
-
-#gallery-modal .modal-img{
-	width: 100%;
-}
-
-/* una query para un pequeño ajuste en las imagenes */
-@media screen and (max-width: 992px) {
-  .section-ubicacion img {
-    width: 100%;
-  }
-}
-
 /*! ========== Estilos SERVICIOS ========== */
 .section-servicios h2 {
   color: #044c45;
@@ -222,6 +192,27 @@ b {
 .card:hover img {
   transform: scale(1.3);
   transition: 0.8s ease;
+}
+
+/*! ========== Estilos UBICACION ========== */
+.section-ubicacion h2 {
+  color: #044c45;
+  font-weight: 600;
+}
+
+.section-ubicacion p {
+  color: #044c45;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.carrusel-ubicacion {
+  width: 100%;
+  margin: auto;
+}
+
+.carrusel-ubicacion img {
+  height: 600px;
 }
 
 /*! ========== Estilos GALERIA ========== */
